@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>VANDA - Vann epi jere biznis ou.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="google_translate_element"></div>
+<div class="bwatEntefasLa">
+  <!-- Ba tit la -->
+  <div class="barDizayLa">
+    <div class="logoAkteks"><span class="logoA" data-logo></span><div class="teks" id="titPaj">VANDA - Konekte</div></div>
+    <div class="ikonYo">
+      <!-- Lang: Google Translate jere tradiksyon an -->
+      <select id="chwaziLang" class="notranslate">
+        <option value="ht">Kreyòl</option><option value="fr">Français</option>
+        <option value="en">English</option><option value="es">Español</option>
+      </select>
+      <button id="btnFull" title="Ekran konplè"><i data-ik="plenEkran"></i></button>
+    </div>
+  </div>
+  <div class="barVet">
+    <span>VANDA – Vann epi jere biznis ou, an pwofesyonèl !</span>
+    <button class="boutonQuitter" id="btnQuitter">QUITTER</button>
+  </div>
+
+  <!-- Paj prensipal yo (ak meni): drawer + antèt rete fiks, sèlman #kontni chanje -->
+  <div class="interfaceAnbaA" id="layout" hidden>
+    <div class="drawerA">
+      <div class="marka"><span data-logo="drawer"></span><small>Vann epi jere biznis ou!</small></div>
+      <div class="menuListe">
+        <button class="menuItem" data-paj="akey"><i data-ik="akey"></i><span>AKEY</span></button>
+        <button class="menuItem" data-paj="vann"><i data-ik="vann"></i><span>VANN</span></button>
+        <button class="menuItem" data-paj="kesye"><i data-ik="kesye"></i><span>KESYE</span></button>
+        <button class="menuItem" data-paj="pwodwi"><i data-ik="pwodwi"></i><span>PWODWI</span></button>
+        <button class="menuItem" data-paj="rapo"><i data-ik="rapo"></i><span>RAPO/ STAT</span></button>
+        <button class="menuItem" data-paj="istorik"><i data-ik="istorik"></i><span>ISTORIK</span></button>
+        <button class="menuItem" data-paj="finans"><i data-ik="finans"></i><span>FINANS</span></button>
+        <button class="menuItem" data-paj="paramet"><i data-ik="paramet"></i><span>PARAMET</span></button>
+      </div>
+    </div>
+    <div class="partiSanDrawer">
+      <div class="antetLa">
+        <div class="bwatRecherche"><i data-ik="rechech"></i><input type="text" class="checheA" id="cheche" placeholder="Cheche..." autocomplete="off">
+          <!-- Sijesyon pwodwi (paj Vann) -->
+          <div id="sijesyon" class="sijesyon" hidden></div>
+        </div>
+        <div class="bwatEnfomasyonKont">
+          <button class="deko" id="btnDeco">DECONNEXION</button>
+          <div class="iconePwofilLa" id="iconePwofil" title="Foto pwofil"></div>
+          <div><div class="salutation">HELLO</div><div class="nonKontLan notranslate" id="nonKont"></div></div>
+        </div>
+      </div>
+      <div id="kontni"></div>
+    </div>
+  </div>
+
+  <!-- Paj koneksyon an ak paj lisans lan (pa gen meni) -->
+  <div class="interfaceAnbaA" id="loginZon" hidden></div>
+  <div class="interfaceAnbaA" id="lisansZon" hidden></div>
+  <div class="versyon">Version 1.0.9 Basic</div>
+</div>
+
+<div id="modalZon"></div>
+<input type="file" id="pwFoto" accept="image/*" hidden>
+
+<!-- Bibliyotèk PDF (nan dosye js/lib, pa bezwen entènèt) -->
+<script src="js/lib/jspdf.umd.min.js"></script>
+<script src="js/lib/jspdf.plugin.autotable.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/db.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/script.js"></script>
+<script src="js/lisans.js"></script>
+<script src="js/pajs2.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=initTradiksyon"></script>
+</body>
+</html>
